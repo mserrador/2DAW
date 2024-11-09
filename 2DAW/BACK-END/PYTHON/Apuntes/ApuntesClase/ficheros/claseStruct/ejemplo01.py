@@ -180,8 +180,6 @@ else:
 # hoy dia 10 de 10 de 24, se dijo que la tarea de ficheros se mandaba hoy o mañana, hemos terminado con ficheros, toca bbdd
 
 
-print("cambio")
-
 
 
 
