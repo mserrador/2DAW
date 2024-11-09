@@ -16,3 +16,5 @@ function saluda(nombre,apellido){
 function saluda2(){
     console.log("hola");
 }
+
+console.log(`tetas`);
