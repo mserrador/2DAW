@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de registro de usuario</h1>
+    <form name="FormularioRegistro" action="/registro.php" method="post" target="_self" accept-charset="UTF-8" enctype="multipart/form-data">
+        <fieldset><legend>Registro de Usuario</legend>
+            <fieldset><legend>Datos personales</legend>
+                <label>Nombre completo:
+                    <input name="nombre_completo" type="text" placeholder="Introduzca su nombre y apellidos" size="35" autofocus required minlength="5" maxlength="30" pattern="[A-Za-zÁ-ÿ\s]{5,30}" title="De 5 a 30 caracteres - Solo letras mayúsculas o minúsculas y espacios en blanco">
+                </label><br/><br/>
+                <label>DNI:
+                    <input name="dni" type="text" placeholder="Introduzca su DNI" size="15" required pattern="[0-9]{8}[A-Za-z]{1}" title="13245678X">
+                </label><br/><br/>
+                    <input type="radio" value="Soltero" name="estado_civil" checked id="soltero"><label for="soltero">Soltero</label><br/>
+                    <input type="radio" value="Casado" name="estado_civil" id="casado"><label for="casado">Casado</label><br/><br/>
+                <label>Contraseña:
+                    <input type="password" name="password" placeholder="Introduce tu contraseña:" size="12" minlength="6" maxlength="12" required pattern="[a-zA-Z0-9@#_$+\?]{6,12}" title="Entre 6 y 12 caracteres">
+                </label><br/><br/>
+                <label>Correo electrónico:
+                    <input type="email" name="correo" placeholder="example@correo.com" size="20" required pattern="[a-z0-9._+]+@[a-z0-9.]+\.+[a-z]{2,}" title="Introduce una dirección de correo válida, como usuario@dominio.com">
+                </label><br/><br/>
+                <label>Teléfono móvil:
+                    <input type="tel" name="telefono" placeholder="Introduzca su número de teléfono móvil" required pattern="(\+34)?(0034)?(34)?[6-7][0-9]{8}" title="Introduce un número de teléfono válido con 9 dígitos, puede incluir el prefijo internacional (+34 o 0034 o 34)">
+                </label><br/><br/>
+                <label>Sitio web:
+                    <input type="url" name="website" placeholder="https://www.tusitio.com" size="20" pattern="http(s)?://.+" title="Debe ingresar una URL válida, comenzando con http:// o https://">
+                </label><br/><br/>                
+                    <input type="checkbox" name="programacion" id="habilidad1">
+                    <label for="habilidad1">Programación</label><br/>
+                    <input type="checkbox" name="diseño" id="habilidad2">
+                    <label for="habilidad2">Diseño Gráfico</label><br/>
+                    <input type="checkbox" name="marketing" id="habilidad3">
+                    <label for="habilidad3">Marketing Digital</label><br/><br/>
+                <label>Subir Currículum(formato PDF):
+                    <input type="file" name="cv" accept="application/pdf">
+                </label><br/><br/>
+                <label>Provincia de procedencia:
+                    <select name="provincia">
+                        <option selected disabled>-Elige una provincia-</option>
+                        <option value="Almeria">Almería</option>
+                        <option value="Murcia">Murcia</option>
+                        <option value="Madrid">Madrid</option>
+                    </select>
+                </label><br/><br/>
+                <label>Fecha de nacimiento:
+                    <input type="date" name="fecha_nacimiento" required min="1960-01-01" max="2010-12-31" title="Fecha entre 01-01-1960 y 31-12-2020">
+                </label>
+            </fieldset>
+            <fieldset><legend>Gustos</legend>
+                <label>Número par favorito:
+                    <input type="number" name="numero_favorito" pattern="^[0]" min="2" step="2">
+                </label><br/><br/>
+                <label>¿Cuánto te gusta la asignatura de Lenguaje de marcas?
+                    <input type="range" name="valoracion_marcas" min="0" max="100" step="1">
+                </label><br/><br/>
+                <label>Color favorito:
+                    <input type="color" name="color_favorito" value="#0000FF">
+                </label><br/><br/>
+                <label for="portatil_favorito">Portátil favorito:</label>
+                <input type="text" list="portatil_favorito">
+                    <datalist id="portatil_favorito">
+                        <option value="TUF Gaming A15">Asus</option>
+                        <option value="Gaming Nitro V 15">Acer</option>
+                        <option value="Thin 15">MSI</option>
+                        <option value="IdeaPad Slim 3">Lenovo</option>
+                        <option value="Victus Gaming 16">HP</option>
+                    </datalist><br/><br/>                
+            </fieldset>
+            <input type="submit" value="Enviar">
+            <button id="mostrar" type="button">Mostrar</button>
+            <input id="resete" type="reset" value="Restablecer">
+        </fieldset>        
+    </form>
+    <script src="js/app.js"></script>
+</body>
+</html>

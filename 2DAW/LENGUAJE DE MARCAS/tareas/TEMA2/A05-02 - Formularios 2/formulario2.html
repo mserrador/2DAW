@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción - Deportes Extremos - Mario</title>
+</head>
+<body>
+    <h1>Formulario de Inscripción para el Evento de Deportes Extremos</h1>
+    <form name="FormularioInscripcion" action="inscripcion.php" method="post" autocomplete="off" enctype="application/x-www-form-urlencoded">
+        <label for="nombre_completo">Nombre completo (Nombre y apellidos):
+            <input autofocus required autocomplete="on" spellcheck="false" size="50" id="nombre_completo" name="nombre_completo" type="text" placeholder="Introduzca su nombre y apellidos">
+        </label>
+        <br><br>
+        <label for="eventos_anteriores">¿En cuántos eventos anteriores has participado?: 
+            <input name="eventos_anteriores" id="eventos_anteriores" type="number" placeholder="0" min="0" max="10">   
+        </label>
+        <br><br>
+        <label for="nivel_habilidad">Selecciona tu nivel de habilidad (1 - Principiante, 5 - Experto): 
+            <input name="nivel_habilidad" id="nivel_habilidad" type="range" placeholder="3" min="1" max="5">   
+        </label>
+        <br><br>
+        <label for="fecha_participacion">Selecciona la fecha en que participarás:  
+            <input name="fecha_participacion" id="fecha_participacion" type="date" value="2024-10-31" min="2024-10-01" max="2024-12-31">   
+        </label>
+        <br><br>
+        <label for="hora_participacion">Selecciona la hora en que participarás:  
+            <input name="hora_participacion" id="hora_participacion" type="time" value="10:00" min="09:00" max="18:00" step="60">   
+        </label>
+        <br><br>
+        <label for="mes_participacion">Selecciona el mes en que prefieres participar:   
+            <input name="mes_participacion" id="mes_participacion" type="month" min="2024-10" max="2024-12">   
+        </label>
+        <br><br>
+        <label for="semana_participacion">Selecciona la semana de participación:    
+            <input name="semana_participacion" id="semana_participacion" type="week" min="2024-W40" max="2024-W52">   
+        </label>
+        <br><br>
+        <label for="color_equipacion">Elige el color de tu equipo de protección:     
+            <input name="color_equipacion" id="color_equipacion" type="color" value="#ff0000">   
+        </label>
+        <br><br>
+        <input type="submit" value="Enviar inscripcion">
+        
+
+    </form>
+</body>
+</html>

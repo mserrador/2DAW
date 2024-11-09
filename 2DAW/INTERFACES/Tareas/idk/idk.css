@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+a {
+    font-size: 100%;
+}
+
+
+#primero {
+    color: red;
+    text-decoration: none;
+}
+#primero:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    transition: 2s;
+}
+#primero:visited {
+    color: rgb(153, 9, 9);
+    transition: 2s;
+}
+#primero:active{
+    font-size: 150%;
+    transition: 2s;
+}
+
+#segundo {
+    color: yellow;
+    text-decoration: none;
+    background-color: blue;
+}
+#segundo:hover {
+    color: white;
+    background-color: blue;
+    border-radius: 50%;
+    transition: 2s;
+}
+
+    
+
+
+#tercero {
+    color: purple;
+    text-decoration: none;
+    
+}
+#tercero:hover {
+    color: white;
+    background-color: purple;
+    transition: 2s;
+}
+#tercero:active {
+    color: grey;
+}
+a[href^="http"]::after {
+    font-family: "Material Symbols Outlined";
+    content: "\e89e";
+
+
+}
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="RegistroUsuario" action="/codigo/registro.php" method="post" autocomplete="on" enctype="application/x-www-form-urlencoded">
+        <label for="busqueda">Busqueda: </label>
+        <input id="busqueda" placeholder="Busca en la tienda">
+    </form>
+    <h1>Registro de Usuario</h1>
+    <form name="RegistroUsuario" action="/codigo/registro.php" method="post" target="_blank" autocomplete="on" enctype="application/x-www-form-urlencoded">
+        <label for="nombre_usuario">Nombre de usuario: 
+            <input autofocus required autocomplete="on" spellcheck="false" size="30" id="nombre_usuario" name="nombre_usuario" type="text" placeholder="Introduzca su nombre y apellidos">
+        </label>
+        <br><br>
+        <label for="email">Correo electronico: 
+            <input required placeholder="example@correo.com" name="email" id="email" type="email">
+        </label>
+        <br><br>
+        <label for="telefono">Telefono: 
+            <input name="telefono" id="telefono" type="tel" placeholder="+34 123456789">   
+        </label>
+        <br><br>
+        <label for="website">Sitio web: 
+            <input name="website" id="website" type="url" placeholder="https://tusitio.com">   
+        </label>
+        <br><br>
+        <label for="password">Contraseña: 
+            <input name="password" id="password" type="password" placeholder="Crea una contraseña">   
+        </label>
+        <br><br>
+        <label for="comentarios">Comentarios adicionales: </label>
+        <br><br>
+        <textarea name="comentarios" id="comentarios" rows="4" cols="50" >
+        Escribe tus comentarios...
+        </textarea>   
+        <br><br>
+        <input type="submit" value="Registrarse">
+        
+        
+
+            
+        
+           
+        
+        
+        
+    </form>
+</body>
+</html> 

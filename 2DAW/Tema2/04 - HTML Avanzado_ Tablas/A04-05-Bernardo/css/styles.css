@@ -1,0 +1,45 @@
+table {
+    width: 100%;
+    text-align: center;
+    border: 4px solid black;
+}
+
+td {
+   border: 2px solid black;
+}
+
+th {
+   border: 4px solid black;
+}
+
+
+div{
+
+    margin-inline: 120px;
+
+}
+
+h1 {
+
+    text-align: center;
+
+}
+
+table .encabezado {
+    background: darkgray;
+}
+table .di {
+    background: cyan;
+}
+table .daw {
+    background: orangered;
+}
+table .es {
+    background: yellow;
+}
+table .lm {
+    background: deepskyblue;
+}
+table .ec {
+    background: chartreuse;
+}

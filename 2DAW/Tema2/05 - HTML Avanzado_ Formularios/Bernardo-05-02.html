@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción - Deportes Extremos - Bernardo</title>
+</head>
+<body>
+    <h1>Formulario de Inscripción para el Evento de Deportes Extremos</h1>
+    <form name="FormularioInscripcion" action="/inscripcion.php" method="post" target="_self" autocomplete="off" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+        <label>Nombre completo (Nombre y apellidos):
+            <input type="text" name="nombre_completo" placeholder="Introduzca su nombre y apellidos" size="50" spellcheck="false" autofocus required>
+        </label><br/><br/>
+        <label>¿En cuántos eventos anteriores has participado?
+            <input type="number" name="eventos_anteriores" min="0" max="10" value="0">
+        </label><br/><br/>
+        <label>Selecciona tu nivel de habilidad (1 - Principiante, 5 - Experto):
+            <input type="range" name="nivel_habilidad" min="1" max="5" value="3">
+        </label><br/><br/>
+        <label>Selecciona la fecha en que participarás:
+            <input type="date" name="fecha_participacion" min="2024-10-01" max="2024-12-31" value="2024-11-01" autocomplete="on">
+        </label><br/><br/>
+        <label>Selecciona la hora en que participarás: 
+            <input type="time" name="hora_participacion" min="09:00:00" max="18:00:00" value="10:00:00" step="3600">
+        </label><br/><br/>
+        <label>Selecciona el mes en que prefieres participar: 
+            <input type="month" name="mes_participacion" min="2024-10" max="2024-12">
+        </label><br/><br/>
+        <label>Selecciona la semana de participación: 
+            <input type="week" name="semana_participacion" min="2024-W40" max="2024-W52" value="2024-W45">
+        </label><br/><br/>
+        <label>Elige el color de tu equipo de protección: 
+            <input type="color" name="color_equipacion" value="#FF0000">
+        </label><br/><br/>
+        <input type="submit" value="Enviar Inscripción">
+    </form>
+</body>
+</html>

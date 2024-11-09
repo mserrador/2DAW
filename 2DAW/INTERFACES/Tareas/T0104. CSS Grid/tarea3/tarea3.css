@@ -1,0 +1,42 @@
+.contenedor {
+    display: grid;
+    gap: 1px;
+    grid-template-areas:
+        [header-left] "head head" 30px [header-right]
+        [main-left] "nav main" 1fr [main-right]
+
+}
+.contenedor div {
+    background-color: blueviolet;
+    color: #fff;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    
+}
+.celda1 {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+.celda2 {
+    padding-top: 10%;
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+.celda3 {
+    padding-top: 10%;
+
+}
+.celda4 {
+    padding-top: 10%;
+
+}
+
+.celda5 {
+    padding-top: 10%;
+
+}
+.celda6 {
+    padding-top: 10%;
+
+}

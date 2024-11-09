@@ -1,0 +1,34 @@
+body{
+    background-color: #CCFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1,h2 {
+    text-align: center;
+}
+#exterior{    
+    border:10px solid rgb(99,99,99);    
+    padding:15px;
+   
+    border-spacing: 1px;
+    background-color: #000;
+}
+#interior{
+    border:1px solid black;
+    border-spacing: 1px;
+    padding:0;
+}
+#interior td,img{
+    height:45px;
+    width:45px;
+    justify-content: center;
+}
+.blanco{
+    background-color:#FFF;
+    
+}
+.negro{
+    background-color:rgb(00,99,00);
+   
+}

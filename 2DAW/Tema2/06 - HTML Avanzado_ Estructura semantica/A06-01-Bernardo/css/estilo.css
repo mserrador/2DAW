@@ -1,0 +1,52 @@
+div {
+    background-color: #fd9f65;
+    border-radius: 5px;
+}
+#header{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    padding:10px;
+}
+#nav {
+    background-color:#f7ca92;
+    border-radius: 5px;
+    text-align: center;
+    padding:1px;    
+}
+#main {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+   
+}
+#main-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 'article article aside' 'section section aside';
+    font-weight: normal;
+    text-align: start;
+    padding:5px;
+    
+}
+#article{
+    background-color: #efc170;
+    grid-area: article;
+    margin:2px;
+    padding:2px
+}
+#section{
+    background-color: #efc170;
+    grid-area: section;
+    margin:2px;
+    padding:2px
+}
+#aside{
+    background-color: #efc170;
+    grid-area: aside;
+    margin:2px;
+    padding:2px
+}
+#footer{
+    text-align: center;
+    padding: 1px;
+}

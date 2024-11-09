@@ -1,0 +1,50 @@
+/*configuracion global de la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*edicion de etiquetas*/
+h1,h2{
+    color:green;
+}
+h3{
+    color:red;
+}
+h6{
+    color:blue;
+}
+
+/*clases*/
+.small{
+    font-size: 8px;
+}
+
+/*dos clases*/
+.samll.negrita{
+    font-weight: bold;
+}
+
+/*selector jerarquico*/
+.cajauno .small{
+    border:1px solid blue;
+}
+
+/*identificador*/
+#primero{
+    border:1px solid black;
+    border-radius: 20px;
+}
+#circulo{
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 50%;
+
+}
+#primero .negrita{
+    font-size: 30px;
+}
+[target="hola"]{
+    color: palevioletred;
+}

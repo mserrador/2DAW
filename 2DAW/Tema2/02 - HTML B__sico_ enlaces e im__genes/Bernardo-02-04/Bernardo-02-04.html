@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Introducción a la Web</title>
+    <meta charset="UTF-8"/>
+  </head>
+  <body>
+  
+<pre>Sistemas Microinformáticos y Redes
+Aplicaciones Web
+
+Unidad de Trabajo 1.
+La Web
+Introducción a la Web</pre> 
+
+<h3 id="indice">Índice</h3>
+<a href="#1">1. Introducción al servicio web</a></br/>
+<a href="#2">2. Arquitectura del servicio web</a></br/>
+<a href="#3">3. Dirección Web o URL</a></br/>
+<a href="#4">4. La página Web</a></br/>
+<a href="#5">5. El protocolo HTTP</a></br/>
+<a href="#6">6. El protocolo HTTPS</pre></a></br/>
+
+<h1 id="1">1.  Introducción al servicio web</h1>
+<img src="imagenes/img1.png" height="150" width="150"/>
+<p>A finales de los años 80 Internet había alcanzado ya un tamaño considerable y el volumen de información disponible en los distintos ordenadores conectados habían convertido esta red en el mayor almacén de datos de la historia. Sin embargo, su crecimiento, un tanto caótico y desordenado, había hecho que la búsqueda y el acceso a dicha información fuese una tarea muy difícil: cada uno almacenaba sus datos utilizando un formato distinto y, por tanto, distintos eran los protocolos utilizados para acceder a ellos. Internet era una red de uso complejo sólo apta para investigadores y técnicos. Su interfaz era textual (de texto) y los comandos para manejarla, complejos. Se hicieron necesarias nuevas formas para indicar la posición de un documento a recuperar y para navegar a través de la red; es decir, se vio entonces la necesidad de llegar a un acuerdo para almacenar la información en un formato común, que permitiese un acceso homogéneo haciendo uso de un mismo protocolo. Como respuesta a estas necesidades, a principios de los 90 nace en el seno del CERN (Conseil Européen pour la Recherche Nucléaire) o Consejo Europeo para la Investigación Nuclear, y de manos de Tim Berners Lee, la World Wide Web, la telaraña mundial o simplemente la Web: un foro de intercambio de información y un mercado en crecimiento accesible a cualquier usuario, independientemente de su grado de conocimiento teórico. Este nuevo servicio de Internet recibió el nombre de servicio Web; su misión: proporcionar a los usuarios la capacidad de consultar información alojada en otros ordenadores en formato de páginas electrónicas o páginas Web. Veamos qué se oculta detrás de este servicio que ha sido, sin duda alguna, el máximo responsable del increíble auge que ha experimentado Internet desde 1993.</p>
+<p>PARA SABER MÁS.</p>
+<p>Visita la Web del CERN, la organización donde se produjo el nacimiento de la World Wide Web.</p>
+<a href="http://public.web.cern.ch" target="_blank">Enlace a CERN</a><br/>
+<a href="http://public.web.cern.ch" target="_blank">http://public.web.cern.ch/</a>
+<p>Actualmente la Web es administrada por el World Wide Web Consortium o consorcio de la Web, cuya misión es la de promover el crecimiento de la Web por medio del desarrollo de especificaciones de referencia que luego son puestas a disposición de toda la comunidad sin costo alguno.</p> 
+<a href="http://www.w3c.es/" target="_blank">Enlace a W3C</a><br/>
+<a href="http://www.w3c.es/" target="_blank">http://www.w3c.es/</a><br/>
+<a href="#indice">Volver al índice</a><br/>
+<h1 id="2">2.  Arquitectura del servicio web</h1>
+<img src="imagenes/img2.gif" height="150" width="150"/>
+<p>El servicio Web sigue el modelo cliente-servidor y, como en cualquier otro servicio que siga dicha filosofía, en el proceso de comunicación hay una aplicación que desempeña el papel de servidor y otra que desempeña el papel de cliente:</p>
+<p>El servidor. En el servicio Web, la aplicación que desempeña el papel de servidor recibe el nombre de Servidor Web, y su misión es la de poner a disposición de los clientes una serie de recursos.</p> 
+<p>El cliente. Por su parte, la aplicación que desempeña el papel de cliente en una comunicación Web, recibe el nombre de Navegador Web, y su misión es la de solicitar al servidor la entrega de alguno de los recursos que ofrece.</p>
+<p>PARA SABER MÁS.</p>
+<p>Dentro del mundo de los servidores Web destacamos los dos más populares: dentro de lo que se conoce como Software Propietario, “Internet Information Server”, y dentro de lo que se conoce como Software Libre, “Apache Web Server”. Si quieres saber más acerca de éste último y experimentar con él, visita la siguiente Web:</p>
+<a href="http://httpd.apache.org/" target="_blank">Enlace a la Web Apache</a><br/>
+<a href="http://httpd.apache.org/" target="_blank">http://httpd.apache.org/</a><br/>
+<p>Desde la aparición en 1993 del primer navegador, llamado Mosaic, son muchos los disponibles en el mercado, siendo dos los más populares: dentro de lo que se conoce como Software Propietario, el Internet Explorer de Microsoft, y dentro de lo que se conoce como Software Libre, el Mozilla Firefox y Google Chrome. Si quieres saber más acerca de Mozilla Firefox y experimentar con él, visita la siguiente Web:</p>
+<a href="http://www.mozilla.org/products/firefox/" target="_blank">Navegador Firefox</a><br/>
+<a href="http://www.mozilla.org/products/firefox/" target="_blank">http://www.mozilla.org/products/firefox/</a><br/>
+<p>Como puedes imaginar, la comunicación entre un navegador y un servidor Web se encuentra perfectamente reglada en un protocolo de nivel de aplicación. Las reglas que rigen una comunicación Web entre un navegador y un servidor Web, vienen recogidas en un protocolo llamado HTTP (HyperText Transport Protocol) o Protocolo para la Transferencia de Hipertexto.</p> 
+<p>El propio nombre del protocolo, HTTP, hace referencia a qué es lo que intercambian cliente y servidor durante su comunicación: Hipertexto. Se plantea entonces la siguiente pregunta clave, ¿qué es el hipertexto? Podemos definir hipertexto como un documento digital que se puede leer de manera no secuencial. Básicamente, un documento de hipertexto es un fichero formado únicamente por dos tipos de elementos:</p> 
+<p>Texto.</p>  
+<p>Referencias a otros documentos de hipertexto. Estas referencias son zonas especiales del documento las cuales, al pinchar sobre ellas con el ratón, producen la solicitud a cualquier otro servidor Web de otro documento de hipertexto. Estas referencias, llamadas hiperenlaces, enlaces, vínculos o hipervínculos, son la piedra angular de la World Wide Web, siendo incluso el origen del propio nombre del servicio, “la telaraña” (the web), el cual hace referencia a esa maraña de referencias que se forman en la Web entre distintos documentos de hipertexto. ¿De dónde crees que procede el nombre de navegar por la Web? Pues precisamente de ese recorrido no secuencial de un documento a otro que se produce conforme se van visitando los enlaces.</p>
+<img src="imagenes/img3.png"/>
+<p>Seguro que ahora mismo te estás haciendo la siguiente pregunta: si un documento de hipertexto está formado únicamente por texto e hiperenlaces, ¿qué sucede con las fotos y resto de elementos que componen una página Web? Evidentemente, estos elementos no son texto; sin embargo, a la hora de ser transmitidos desde el servidor al cliente, utilizando unos mecanismos especiales, son codificados en forma de texto, para ser reconstruidos a su forma original en el destino. Es por eso que, a todos los efectos, de cara a HTTP son considerados como texto.</p>
+<p>El diálogo que se produce entre navegador y servidor Web; es decir, el protocolo HTTP, es muy sencillo. Básicamente consiste en lo siguiente:</p>
+<p>El navegador solicita un recurso a un servidor Web.</p>
+<p>El servidor Web entrega dicho recurso al navegador, el cual lo visualiza.</p>
+<p>Un recurso será generalmente una página Web, pero puede ser perfectamente una foto, un documento PDF, un documento de un procesador de textos o, en general, un fichero de cualquier otro tipo. Por tanto, de forma genérica, se llama recurso a cualquier fichero alojado en un servidor y accesible por los clientes haciendo uso del protocolo adecuado, en nuestro caso, el protocolo HTTP.</p> 
+<a href="#indice">Volver al índice</a><br/>
+<h1 id="3">3.  Dirección Web o URL</h1>
+<img src="imagenes/img4.jpg" height="150" width="150"/>
+<p>Por tanto, tal y como acabamos de describir en el apartado anterior, la función de un navegador Web es la de solicitar recursos; pero para poder hacerlo, tiene que haber una manera de especificar exactamente qué recurso se quiere, tiene que idearse una forma de identificar un recurso de manera unívoca en toda la Red. Para ello se utiliza lo que se conoce con el nombre de URL (Uniform Resource Locator) o Localizador Uniforme de Recursos, que no es más que una cadena de caracteres gracias a la cual se puede localizar cada uno de los recursos de información disponibles en la Web. Para localizar un recurso en la Red es necesario:</p>
+<p>Localizar al servidor Web en el que se encuentra el recurso buscado.</p>
+<p>Localizar el recurso dentro del servidor Web en el que se encuentra alojado.</p>
+<p>Consecuentemente, una URL está formada por las siguientes partes perfectamente diferenciadas:</p>
+<p>Especificación del protocolo o servicio mediante el cual se pretende recuperar el recurso del servidor, seguido de “://”</p>
+<p>Localización en Internet de la aplicación servidor Web en la que se encuentra el recurso buscado. Debemos recordar que para localizar una aplicación en el modelo de comunicación TCP/IP, deberemos proporcionar tanto la dirección IP del ordenador en el que se está ejecutando dicha aplicación, o en su defecto su nombre DNS, más el puerto en el que se encuentra escuchando dicha aplicación, ambos separados por “:”. El puerto bien conocido para los servidores Web es el puerto 80, por lo que si el servidor se encuentra escuchando en ese puerto, no será necesario especificar el puerto en la URL, pues se supondrá dicho puerto por defecto.</p>
+<p>Localización en el servidor Web del recurso. Para localizar el recurso dentro del servidor Web, deberá especificarse la ruta hasta el mismo.</p>
+<pre>Los siguientes son ejemplos de URLs:
+URL
+Recurso Solicitado
+http://www.mec.es/                                            
+index.html (página web) Al no decir nada toma por defecto el recurso index.html
+http://www.mec.es/index.html
+index.html (página web)
+http://www.mec.es:80/index.html
+index.html (página web)
+http://www.mec.es:8080/
+Da error porque no hay ningún servidor Web escuchando en ese puerto
+http://www.mec.es/mecd/novedades/index.html
+index.html (página web)
+http://www.juntadeandalucia.es/SP/JDA/CDA/Imagenes/JDA-marca_junta.gif
+JDA-marca_junta.gif (imagen)</pre>
+<a href="#indice">Volver al índice</a><br/>
+<h1 id="4">4.  La página Web</h1>
+<p>Anteriormente definimos recurso como cualquier fichero que se encuentra alojado en un servidor y accesible por los clientes haciendo uso del protocolo adecuado, en nuestro caso, el protocolo HTTP. Sin embargo, aunque cualquier fichero es considerado un recurso, es cierto que la mayoría de los recursos que se solicitan en la Web son unos llamados páginas Web. ¿Y qué es exactamente una página Web? Una página Web es un fichero de texto, generalmente con extensión .htm o .html, que se encuentra escrito en un lenguaje llamado HTML (HyperText Markup Language) o Lenguaje de Marcado de Hipertexto. Dicho lenguaje es un lenguaje de etiquetas o marcas que está diseñado para estructurar textos y presentarlos en forma de hipertexto, y el cual se engloba dentro de los llamados lenguajes de visualización, pues su única misión la de indicarle al navegador cómo debe presentar los contenidos que componen la página.</p> 
+<p>Además, una página Web, aparte de hiperenlaces a otras páginas, puede incluir referencias a otros recursos como fotos, animaciones, etc., que se mostrarán incluidos en la propia página en el navegador, aunque sean recursos distintos que se solicitan de manera independiente a sus servidores correspondientes.</p> 
+<p>Entre el cliente y el servidor se puede transferir cualquier tipo de contenido, aunque debería estar definido por el estándar MIME (Multipurpose Internet Mail Extension o Extensión de Correo Multipropósito de Internet). A priori este estándar se definió para el envío de mensajes de correo electrónico, aunque posteriormente también se ha utilizado para transferencias de información mediante el protocolo HTTP. Este estándar define los formatos, tipo de letra y caraterísticas de una página para que pueda ser visible por distintos navegadores. Si el recurso no es una página Web sino otra cosa, los clientes deben saber con qué tipo de objetos tratan o tener un descripción MIME de los mismos. Esta información viajará en la cabecera HTTP y le indicará al navegador el tipo de documento que se le envía para que pueda elegir cómo visualizarlo. Habitualmente existen cuatro alternativas:</p>
+<p>El navegador tiene la funcionalidad suficiente para mostrar el documento. Éste es el caso de los documentos HTML y de las imágenes.</p>
+<p>El navegador no tiene la funcionalidad para mostrar el documento, pero puede cargar, de forma dinámica, un módulo que lo visualice. A estos módulos se les denomina plugins del navegador. Éste es el caso de las presentaciones en Flach o de los documentos PDF</p>
+<p>Aunque el navegador no tenga la funcionalidad para mostrar adecuadamente el contenido del documento, está configurado para arrancar una aplicación que lo pueda mostrar.</p>
+<p>El navegador no ha podido hacer ninguna de las tres cosas anteriores y opta por mostrarle al usuario un diálogo para que confirme si desea almacenar el documento en el disco local del ordenador.</p>
+<p>A priori, las páginas son estáticas, tienen un contenido que no admiten interacción por parte del usuario, simplemente se muestran y, a lo sumo, permiten el acceso a otras páginas mediante los mencionados hiperenlaces.</p> 
+<img src="imagenes/img5.png"/>
+
+<p>Posteriormente aparecieron lenguajes de programación, como JavaScript, que permiten añadir cierta interacción con la página por parte del usuario. Las páginas siguen siendo estáticas, pero el navegador es capaz de ejecutar este código, que forma parte de la página o documento HTML. Así, por ejemplo, suele utilizarse para validar que los campos que se han introducido en un formulario son correctos antes de enviarlos al servidor, o para que elementos cambien al pasar el ratón sobre ellos, para desplegar menús, etc. Los Applets de Java tamibién son una tecnología para poder ejecutar código en el navegador cliente. En este caso, necesitamos tener instalado en el ordenador cliente una máquina virtual de Java, que será la que ejecute dicho programa, con su correspondiente plugin.</p>
+<img src="imagenes/img6.png"/>
+
+<p>Por útimo, tenemos lo que se conoce como páginas dinámicas. Estas páginas son creadas en el servidor automáticamente en el momento de la petición y servidas posteriormente al cliente. Son necesarias cuando, por ejemplo, se quiere consultar una base de datos y devolver una página con los datos encontrados. Como es evidente, esta página no puede estar construida con antelación, porque no sabemos qué datos debe contener. Para poder utilizar páginas dinámicas, aparte de un servidor Web, necesitaremos un servidor de aplicaciones, que será la aplicación que ejecutará el código, realizará las consultas a las bases de datos correspondientes y elaborará el código HTML con los resultados.</p>
+<img src="imagenes/img7.png"/>
+
+<p>Algunos lenguajes y tecnologías utilizados para la creación de páginas dinámicas son:</p>
+<p>CGI (Common Gateway Interface o Interfaz de Pasarela Común): No es propiamente un lenguaje, sino una interfaz que permite a documentos HTML intercambiar datos con programas C o Perl.</p>
+<p>ASP (Active Server Pages o Páginas Activas de Servidor): Tecnología de Microsoft para la programación de páginas dinámicas. Derivado de ASP y aprovechando la tecnología .NET, surgió el lenguaje orientado a objetos ASP.NET, que permite la utilización de lenguajes soportados por el marco de trabajo .NET, como por ejemplo C#.</p>
+<p>PHP. Tecnología para la programación de páginas dinámicas.</p>
+<p>Servlets de Java y JSP: Tecnología Java para la programación de páginas dinámicas. Un servlet es un programa Java que se ejecuta en el servidor, mientras que JSP (Java Server Pages o Páginas de Servidor Java) es una tecnología que utiliza etiquetas especiales para incluir contenido dinámico mediante código Java. El servidor interpreta o compila la página y genera el servlet asociado.</p>
+<p>AJAX (Asinchronous JavaScript and XML o JavaScript y XML Asíncrono): Utiliza varias tecnologías como XML y JavaScript. La comunicación del cliente con el servidor la efectúa en segundo plano, facilitando la interacción con el usuario y evitándole recargas de páginas.</p>
+<a href="#indice">Volver al índice</a><br/>
+<h1 id="5">5.  El protocolo HTTP</h1>
+<p>El Protocolo de Transferencia de Hipertexto es un protocolo cliente-servidor de nivel de aplicación que se usa para el intercambio de información entre los clientes y servidores Web.</p>
+<p>Es un protocolo basado en el esquema petición/respuesta. El cliente envía un mensaje de petición y el servidor contesta con un mensaje de respuesta, cuyo contenido es función de la petición hecha por el cliente.</p>
+<p>Además, es un protocolo sin estado. Tras cada par petición-respuesta, el servidor cierra inmediatamente la conexión. No existe el concepto de sesión. Si descargamos una página Web que hace referencia a 7 imágenes, habrá que realizar 7 peticiones HTTP, una para cada imagen a descargar.</p>
+<p>Es un protocolo basado en mensajes de texto plano; es decir, todo lo que se transmite es texto o tiene que estar codificado como texto. Los mensajes están compuestos de una línea inicial, de una cabecera y de un cuerpo.</p>
+<p>Línea inicial del mensaje: Primera línea del mensaje donde se indica que hacer (mensaje de petición) o que ha ocurrido (mensaje de respuesta).</p>
+<p>Cabecera del mensaje: Bloque de campos terminados por una línea en blanco. Contienen los atributos del mensaje.</p>
+<p>Cuerpo del mensaje: Es opcional. Su presencia depende de la petición y del resultado. El contenido está determinado por el tipo de recurso</p>
+<p>El cliente envía una petición al servidor en forma de mensaje texto, incluyendo:</p>
+<p>Una línea inicial con el método de solicitud, la URL del recurso solicitado y la versión del protocolo.</p>
+<p>Una lista de campos, consistente en modificadores de la petición, información del cliente, etc.</p>
+<p>Un posible cuerpo de contenido. </p>
+
+<p>El servidor responde con un mensaje donde se incluye:</p>
+<p>Una línea de estado, con la versión del protocolo y un código de éxito o error.</p>
+<p>Una lista de campos, donde se incluyen entre otras cosas: el tipo MIME de la respuesta, información del servidor, entidades de meta-información, etc.</p>
+<p>Un cuerpo con el contenido del recurso solicitado (opcional).</p> 
+<p>En HTTP existen los siguientes comandos que se pueden enviar a un servidor:</p>
+<p>GET: Solicita un documento al servidor. Se pueden enviar datos en la URL</p>
+<p>HEAD: Similar a GET, pero sólo pide las cabeceras HTTP. Suele utilizarse para comprobar enlaces o para consultar información sobre el fichero (fecha de modificación, tamaño, tipo de servidor, tipo de documento solicitado) antes de solicitarlo.</p>
+<p>POST: Manda datos al servidor para su procesado. Similar a GET, pero además envía datos en el cuerpo del mensaje. La URL corresponde a un página dinámica que trata los datos enviados.</p>
+<p>PUT: Almacena el documento enviado en el cuerpo del mensaje.</p>
+<p>DELETE: Elimina el documento referenciado en la URL.</p>
+<p>TRACE: Rastrea los intermediarios por los que pasa la petición.</p>
+<p>OPTIONS: Averigua los métodos que soporta el servidor.</p>
+<a href="#indice">Volver al índice</a><br/>
+<h1 id="6">6.  El protocolo HTTPS</h1>
+<img src="imagenes/img8.jpg" height="150" width="150"/>
+<p>¿Has utilizado alguna vez el servicio de banca electrónica de algún banco? Si lo has hecho, te habrás dado cuenta de que la URL que introduces en la barra de direcciones del navegador no comienza por http, sino por HTTPS. ¿Qué es HTTPS? HTTPS es un protocolo que permite la transmisión segura de información entre el navegador y el servidor Web mediante el uso de mecanismos de cifrado y certificados de autenticación, los cuales aseguran respectivamente:</p>
+<p>Que si la información es interceptada por el camino no podrá ser leída, pues se asegura que ésta sólo podrá ser leída por el destinatario de la misma.</p>
+<p>Que los actores implicados en la comunicación son quienes dicen ser. Es decir, en el ejemplo del banco, que la Web pertenece realmente a la entidad bancaria en cuestión y que el usuario que está al otro lado del navegador es realmente el cliente del banco que dice ser.</p>
+<p>Podríamos decir que HTTPS no es más que una variante segura de HTTP. Por razones más que evidentes, éste y no HTTP es el protocolo que utilizan los servidores Web de los bancos, pues la información que de allí se obtiene es confidencial y sólo se debe permitir el acceso a los dueños de la misma.</p>
+<p>HTTPS se apoya sobre una conexión segura previamente establecida enla capa de transporte mediante la utilización de SSL (Secure Socket Layer) o TSL (Transport Layer Security). Esta conexión segura encripta la información. El puerto que se suele utilizar para este tipo de conexiones es el 443.</p>
+<a href="#indice">Volver al índice</a><br/>
+  </body>
+</html>

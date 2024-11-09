@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - Tienda de Tecnología - Bernardo</title>
+</head>
+<body>
+    <form name="Buscador" method="get" action="/codigo/busqueda.php" target="_self" autocomplete="on" 
+    accept-charset="UTF-8" enctype="application/x-www-form-urlencoded">
+    <label>Búsqueda:
+        <input name="busqueda" placeholder="Busca en la tienda">
+    </label><br/><br/>
+    <input type="submit" value="Buscar">
+    </form>
+    <h1>Registro de Usuario</h1>
+    <form action="/codigo/registro.php" method="post" name="RegistroUsaurio" target="_blank" autocomplete="on" 
+    accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" novalidate>
+        <label>Nombre de usuario:
+            <input type="text" name="nombre_usuario" placeholder="Introduzca su nombre y apellidos" size="30" value="" spellcheck="false"
+            autocomplete="on" autofocus required>
+        </label><br/><br/>
+        <label>Correo electrónico:
+            <input type="email" name="email" placeholder="example@correo.com" autocomplete="on" required>
+        </label><br/><br/>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" placeholder="+34 123456789" id="telefono"><br/><br/>
+        <label>Sitio web:
+            <input type="url" name="website" placeholder="https://tusitio.com" autocomplete="on">
+        </label><br/><br/>
+        <label>Contraseña:
+            <input type="password" name="password" placeholder="Crea una contraseña">
+        </label><br/><br/>
+        <label for="comentarios">Comentarios adicionales:</label><br/>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe tus comentarios..."></textarea><br/><br/>
+        <input type="submit" value="Registrarse">
+    </form>
+</body>
+</html>

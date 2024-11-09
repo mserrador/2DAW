@@ -1,0 +1,15 @@
+1 crear una card totalmente nueva y meterla, con DOM
+
+2 cuando hagamos click en una card que automaticamente meta una nueva despues de las cards que ya hay en el html, con DOM
+
+3 pequeña aplicacion con 3 animales, en la cual solo podemos arrastrar un animal a su caja especifica, no puedo meter un gato en la caja de perro, pro si puedo meter el gato en la caja gato
+
+4 tarea entregada que hicimos en clase
+
+5 hacer un formulario con dos text area, 
+en el primero meter informacion del localStorage, en el segundo meter informacion del sesionStorage, 
+cuando cierre y luego abra el campo con local se debe guardar y la session desaparecer, hay un boton " reset " que borra 
+la info de ambos campos
+
+6 hace un fetch y mostrar datos con Coches.json que se encuentra en 30-intersectionObserver
+

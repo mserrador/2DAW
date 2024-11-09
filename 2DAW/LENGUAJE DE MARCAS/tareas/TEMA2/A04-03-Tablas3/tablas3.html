@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajedrez - Mario</title>
+    <style>
+        body{
+            background-color: #ccffff;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        .exterior{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            border: 10px solid #999999;
+            padding: 15px;
+            border-spacing: 1px;
+            background-color: #000000;
+        }
+        .interior{
+            border: 1px solid;
+            padding: 0px;
+            border-spacing: 0px;
+        }
+        .blanco{
+            max-width: 45px;
+            max-height: 45px;
+            min-width: 45px;
+            min-height: 45px;
+            background-color: rgb(00,99,00);
+        }
+        .color{
+            min-width: 45px;
+            min-height: 45px;
+            max-width: 45px;
+            max-height: 45px;
+            background-color: #ffffcc;
+        }
+        img {
+            border: 0px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Un tablero de ajedrez</h1>
+    <h2>Se atreve a desafiar al computador</h2>
+    <table class="exterior">
+        <tr>
+            <td><table class="interior">
+                <tr>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/torre-bt.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/caballo-bt.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/alfil-bt.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/reina-bt.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/rey-bt.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/alfil-bt.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/caballo-bt.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/torre-bt.gif"></td>
+                </tr>
+                <tr>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/peon-bt.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/peon-bt.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/peon-bt.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/peon-bt.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/peon-bt.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/peon-bt.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/peon-bt.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/peon-bt.gif"></td>
+                </tr>
+                <tr>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                </tr>
+                <tr>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                </tr>
+                <tr>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                </tr>
+                <tr>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/vacio.gif"></td>
+                </tr>
+                <tr>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/peonnegro.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/peonnegro.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/peonnegro.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/peonnegro.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/peonnegro.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/peonnegro.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/peonnegro.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/peonnegro.gif"></td>
+                </tr>
+                <tr>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/torrenegra.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/caballonegro.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/alfilnegro.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/reynegro.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/reinanegra.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/alfilnegro.gif"></td>
+                    <td class="color"><img src="imagenes/piezas_ajedrez/caballonegro.gif"></td>
+                    <td class="blanco"><img src="imagenes/piezas_ajedrez/torrenegra.gif"></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</body>
+</html>

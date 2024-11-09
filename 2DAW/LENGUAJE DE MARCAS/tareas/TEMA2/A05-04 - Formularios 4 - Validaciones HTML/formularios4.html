@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de registro de usuario</h1>
+    <form name="FormularioRegistro" action="registro.php" method="post" autocomplete="off" enctype="application/x-www-form-urlencoded" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Registro de Usuario</legend>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label id="nombre_completo">Nombre completo:
+                    <input type="text" name="nombre_completo" placeholder="Introduzca su nombre y apellidos" size="35" autofocus
+                    required
+                    minlength="5"
+                    maxlength="30"
+                    pattern="^[a-zA-Z\s]{5,30}$"
+                    title="De 5 a 30 caracteres - Solo letras mayúsculas o minúsculas y espacios en blanco">
+                </label>
+                <br><br>
+                <label id="dni">DNI:
+                    <input type="text" name="dni" placeholder="Introduza su DNI" size="15"
+                    required
+                    pattern="^\d{8}[A-Z]$""
+                    title="12345678X">
+                </label>
+                <br><br>
+                <label id="estado_civil">Estado civil:
+                    <input type="radio"  name="estado_civil" id="soltero">
+                    Soltero
+                    <input type="radio"  name="estado_civil" id="casado">
+                    Casado
+                </label>
+                <br><br>
+                <label id="password">Contrasenya:
+                    <input type="password" name="password" placeholder="Introduce tu Contrasenya" size="12"
+                    required
+                    minlength="6"
+                    maxlength="12"
+                    title="Entre 6 y 12 caracteres">
+                </label>
+                <br><br>
+                <label id="correo">Correo electronico:
+                    <input type="email" name="correo" placeholder="example@correo.com" size="50"
+                    required
+                    pattern="^[a-z0-9._+]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Introduce una dirección de correo válida, como usuario@dominio.com">
+                </label>
+                <br><br>
+                <label id="telefono">Telefono movil:
+                    <input type="tel" name="telefono" placeholder="Introduzca su número de teléfono móvil"
+                    required
+                    pattern="^(\+34|0034|34)?[67]\d{8}$"
+                    title="Introduce un número de teléfono válido con 9 dígitos, puede incluir el prefijo internacional (+34 o 0034 o 34)">
+                </label>
+                <br><br>
+                <label id="website">Sitio web:
+                    <input type="url" name="website" placeholder="https://www.tusitio.com" size="20"
+                    pattern="^https?:\/\/"
+                    title="Debe ingresar una URL válida, comenzando con http:// o https://">
+                </label>
+                <br><br>
+                <label>Áreas de interés o habilidades:</label>
+                <br>
+                
+                <label id="programacion"><input type="checkbox" name="programacion">Programacion
+                    
+                </label>
+                <br>
+                
+                <label id="disenyo_grafico"><input type="checkbox" name="disenyo_grafico">Disenyo Grafico
+                    
+                </label>
+                <br>
+                
+                <label id="marketing_digital"><input type="checkbox" name="marketing_digital">Marketing Digital
+                    
+                </label>
+                <br><br>
+                <label id="cv">Subir Currículum (formato PDF): 
+                    <input type="file" accept="application/pdf">
+                </label>
+                <br><br>
+                <label id="provincia">provincia de procedencia:
+                    <select name="provincia">
+                        <option disabled selected>-Elige una provincia-</option>
+                        <option value="1" id="albacete">Albacete</option>
+                        <option value="2" id="asturias">Asturias</option>
+                        <option value="3" id="barcelona">Barcelona</option>
+                    </select>
+                </label>
+                <br><br>
+                <label id="fecha_nacimiento">Fecha nacimiento:
+                    <input type="date" name="fecha_nacimiento"
+                    required
+                    min="1960-01-01" max="2010-12-31"
+                    title="Fecha entre 01-01-1960 y 31-12-2020">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Gustos</legend>
+                <label id="numero_favorito">Numero par favorito:
+                    <input type="number" name="numero_favorito"
+                    min="2" step="2">
+                </label>
+                <br><br>
+                <label id="valoracion_marcas">¿Cuánto te gusta la asignatura de Lenguaje de marcas?
+                    <br>
+                    <input type="range" name="valoracion_marcas"
+                    min="0"
+                    max="100">
+                </label>
+                <br><br>
+                <label id="color_favorito">Color favorito:
+                    <input type="color" name="color_favorito" value="#0000ff">
+                </label>
+                <br><br>
+                <label for="portatil_favorito">Portátil favorito:</label>
+                <select id="portatil_favorito" name="portatil_favorito" required>
+                    <option value="" disabled selected>Selecciona tu portátil favorito</option>
+                    <option value="dell_xps" title="Dell XPS 13">Dell XPS 13 - Dell</option>
+                    <option value="hp_spectre" title="HP Spectre x360">HP Spectre x360 - HP</option>
+                    <option value="macbook_air" title="MacBook Air">MacBook Air - Apple</option>
+                    <option value="asus_zenbook" title="Asus ZenBook 14">Asus ZenBook 14 - Asus</option>
+                    <option value="lenovo_thinkpad" title="Lenovo ThinkPad X1">Lenovo ThinkPad X1 - Lenovo</option>
+                    <option value="otro" title="Modelo propio">Otro (especifica en el campo de texto)</option>
+                </select>
+                <input type="text" id="nombre_oculto" value="Mario">
+            </fieldset>
+            <input type="button" value="Enviar">
+            <input type="button" value="Mostrar datos">
+            <input type="button" value="Restablecer">
+        </fieldset>
+
+    </form>
+</body>
+</html>

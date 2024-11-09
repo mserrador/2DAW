@@ -1,0 +1,265 @@
+/*importacion de fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/*fichero 01*/
+.eclipse {
+    height: 100px;
+    width: 100px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 5px 5px 0px 5px yellow;
+}
+.fixed {
+    position: fixed;
+    bottom: 7px;
+    right: 20px;
+}
+
+/*fichero 02*/
+body{
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.bg_inicio {
+    min-height: 100vh;
+    background-image: url(fondo-cover.jpg);
+    background-size: 100% 100%;
+    margin: 0;
+}
+.bg_inicio h1 {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100vh;
+    color: white;
+    margin: 0;
+    font-family: 'Pacifico', sans-serif;
+    font-size: 150px;
+}
+
+/*fichero 03*/
+header {
+    height: 90px;
+    background-color: #333;
+    width: 100%;
+}
+header > div {
+    float: left;
+    display: block;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.logo {
+    margin-top: 7%;
+    margin-left: 50%;
+    border:5px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #333;
+    height: 50px;
+    width: 50px;
+}
+nav{
+    position: absolute;
+    right: 0;
+    margin-top: 2.3%;
+    margin-right: 5%;    
+}
+nav ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+}
+nav li{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li {
+    font-size: 130%;
+    color: white;   
+    
+}
+nav ul li a::before{
+    content:"|";
+    margin-left: 0px;
+    padding-right:15px;
+}
+nav ul li:first-child a::before{
+    content: "";
+}
+nav ul li a {
+    font-family: 'Afacad Flux', Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+/*fichero04*/
+
+.card {
+    display: inline-block;
+    box-shadow: 0 15px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card div {
+    margin-bottom: -4px;
+}
+.card div img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    
+}
+.card .card_content{
+    background: rgb(145,231,214);
+    background: linear-gradient(90deg, rgba(145,231,214,1) 0%, rgba(13,148,187,1) 50%);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+    padding: 25px;
+    
+}
+.card .card_content h2 {
+    margin-top: 0;
+    padding-top: 5%;
+    margin-left: 15px;
+}
+.card .card_content p {
+    margin-top: -10px;
+    margin-left: 15px;
+}
+.btn {
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+/*fichero05*/
+.main ul {
+    padding: 10px;
+    display: block;
+}
+.main {
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+.main h1 {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50vh;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-family: 'Pacifico', sans-serif;
+    font-size: 75px;
+}
+.cards li{
+    display: inline-block;
+    list-style-type: none;
+    width: 33.3%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+.cards li .card {
+    display: block;
+}
+
+.made_by {
+    font-family: 'Pacifico', sans-serif;
+    margin-bottom: 10px;
+}
+/*fichero06*/
+.intro {
+    max-width: 100%;
+    max-height: 100vh;    
+}
+.intro img {
+    max-width: 100%;
+    height: auto;
+}
+.intro p {
+    margin: 0;
+    position: relative;
+    float: right;
+    margin-right: 13%;
+    margin-top: -20%;
+    color: white;
+    font-family: 'Afacad Flux', Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    background-color: #3f3f3f8e;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+
+}
+/*fichero07*/
+footer {
+    background-color: #000000;
+    
+}
+footer p {
+    border-top: solid 1px gray ;
+    margin-top: 5%;
+    color: white;
+    padding-left: 9px;
+    padding-right: 5px;
+    padding-top: 15%;
+    margin-bottom: 20%;
+}
+footer div {
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;  
+    font-family: 'Afacad Flux', Arial, Helvetica, sans-serif;
+    
+}
+.iconos {
+    color: grey;
+    font-size: 50px;
+    padding-left: 37%;
+    padding-bottom: 25%;
+    
+}
+
+.home::before {
+    font-family: "Material Symbols Outlined";
+    content: "\e88a";
+    
+}
+.bolt::before {
+    font-family: "Material Symbols Outlined";
+    content: "\ea0b";
+    
+}
+.key::before {
+    font-family: "Material Symbols Outlined";
+    content: "\e73c";
+    
+}
+.rocket::before {
+    font-family: "Material Symbols Outlined";
+    content: "\eb9b";
+}

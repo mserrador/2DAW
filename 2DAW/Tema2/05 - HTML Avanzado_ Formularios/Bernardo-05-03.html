@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra - Tienda en Línea - Bernardo</title>
+</head>
+<body>
+    <h1>Formulario de compra</h1>
+    <form name="FormularioCompra" action="/tienda/realizarCompra.php" method="post" autocomplete="off" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded">
+        <label>Nombre completo:
+            <input type="text" name="nombre_completo" placeholder="Ingresa tu nombre completo." size="50" spellcheck="false" autofocus required>
+        </label><br/><br/>
+        <label>Selecciona la categoría de productos en la que está interesado:
+           <select name="categoria_producto">
+            <option disabled selected>-Elige una opción-</option>
+            <optgroup label="Electrónicos">
+                <option value="1">Laptop</option>
+                <option value="2">Tablet</option>
+                <option value="3">Smartphone</option>
+            </optgroup>
+            <optgroup label="Accesorios">
+                <option value="4">Auriculares</option>
+                <option value="5">Cables</option>
+                <option value="6">Fundas</option>
+            </optgroup>
+            <optgroup label="Hogar">
+                <option value="7">Electrodomésticos</option>
+                <option value="8">Domótica</option>
+            </optgroup>
+           </select><br/><br/>
+            <label>Marcas en las que está interesado: </label><br/><br/>
+                <input type="checkbox" name="marca_Samsung" id="marca_Samsung">
+            <label for="marca_Samsung">Samsung</label>
+                <input type="checkbox" name="marca_Xiaomi" id="marca_Xiaomi">
+            <label for="marca_Xiaomi">Xiaomi</label>
+             <input type="checkbox" name="marca_Oppo" id="marca_Oppo">
+            <label for="marca_Oppo">Oppo</label>
+             <input type="checkbox" name="marca_Apple" id="marca_Apple">
+            <label for="marca_Apple">Apple</label>
+             <input type="checkbox" name="marca_Motorola" id="marca_Motorola">
+            <label for="marca_Motorola">Motorola</label><br/><br/>
+            <label>Selecciona el producto a comprar:
+            <select name="producto_compra">
+                <option disabled selected>-Elige un producto-</option>
+                <option name="REF001" value="1">Xiaomi Redmi Note 13</option>
+                <option name="REF002" value="2">Xiaomi 14T</option>
+                <option name="REF003" value="3">Xiaomi Redmi Note 12</option>
+                <option name="REF004" value="4">Xiaomi Redmi Note 13 Pro</option>
+                <hr/>
+                <option name="REF005" value="5">Samsung Galaxy 24</option>
+                <option name="REF006" value="6">Samsung Galaxy 22</option>
+                <hr/>
+                <option name="REF007" value="7">Oppo A79</option>
+                <option name="REF008" value="8">Oppo Reno Z4</option>
+                <hr/>
+                <option name="REF009" value="9">Apple iPhone 16</option>
+                <option name="REF010" value="10">Apple iPhone 15 Pro</option>
+                <hr/>
+                <option name="REF011" value="11">Motorola G5</option>
+                <option name="REF012" value="12">Motorola G6</option>
+            </select><br/><br/>
+            </label>
+            <label for="color">Escribe el color de la carcasa de regalo:
+                <input  list="color_producto" type="text" id="color">
+            </label>            
+                 <datalist id="color_producto">
+                    <option value="Rojo">color estándar</option>
+                    <option value="Azul">color estándar</option>
+                    <option value="Verde">color premium</option>
+                    <option value="Negro">color premium</option>
+                </datalist><br/><br/>           
+            <label>Selecciona servicios adicionales(puede seleccionar varios):
+                <select name="servicios" multiple>
+                    <option value="soporte">Soporte técnico</option>
+                    <option value="mantenimiento">Seguro de accidentes</option>
+                    <option value="instalacion">Instalación de software</option>
+                    <option selected value="garantia">Garantía adicional</option>
+                </select>
+            </label><br/><br/>
+            <label>Métodos de pago:<br/>
+               
+                <input type="radio" name="metodo_pago" checked value="tarjeta">Tarjeta de crédito<br/><br7></br7>
+               <input type="radio" name="metodo_pago" value="paypal">Paypal<br/>
+               <input type="radio" name="metodo_pago" value="transferencia">Transferencia bancaria<br/>
+               
+            </label><br/>
+            <label>¿Quieres suscribirte a nuestro boletín de noticias?
+                <input type="checkbox" name="suscripcion" checked>
+            </label><br/><br/>
+            <input type="submit" value="Comprar">
+        </label><br/><br/>
+    </form>
+</body>
+</html>

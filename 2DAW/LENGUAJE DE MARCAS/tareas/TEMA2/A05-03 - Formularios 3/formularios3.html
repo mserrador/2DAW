@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra - Tienda en Línea - Mario</title>
+</head>
+<body>
+    <form name="FormularioCompra" action="/tienda/realizarCompra.php" method="post" autocomplete="off" enctype="application/x-www-form-urlencoded">
+        <label for="nombre_completo">Nombre completo (Nombre y apellidos):
+            <input autofocus required autocomplete="on" spellcheck="false" size="50" id="nombre_completo" name="nombre_completo" type="text" placeholder="Ingresa tu nombre completo">
+        </label>
+        <br><br> 
+        <label for="categoria_producto">Selecciona la categoría de productos en la que está interesado:
+            <select id="categoria_producto" name="producto_compra">
+                <option disabled selected>-Elige una opción-</option>
+                <optgroup label="Electronicos">
+                    <option value="1">Laptop</option>
+                    <option value="2">Tablet</option>
+                    <option value="3">Smartphone</option>
+                </optgroup>
+                <optgroup label="Accesorios">
+                    <option value="1">Ariculares</option>
+                    <option value="2">Cables</option>
+                    <option value="3">Fundas</option>
+                </optgroup>
+                <optgroup label="Hogar">
+                    <option value="1">Electrodomesticos</option>
+                    <option value="2">Domotica</option>
+                </optgroup>
+            </select>
+        </label>
+        <br><br>
+        <label>Marcas en las que está interesado: </label>
+        <br><br>
+        <label id="marca_Samsung">Samsung
+            <input type="checkbox" name="marca_Samsung">
+        </label>
+        <label id="marca_Xiaomi">Xiaomi
+            <input type="checkbox" name="marca_Xiaomi">
+        </label>
+        <label id="marca_Oppo">Oppo
+            <input type="checkbox" name="marca_Oppo">
+        </label>
+        <label id="marca_Apple">Apple
+            <input type="checkbox" name="marca_Apple">
+        </label>
+        <label id="marca_Motorola">Motorola
+            <input type="checkbox" name="marca_Motorola">
+        </label>
+        <br><br>
+        <label for="producto_compra">Selecciona el producto a comprar: 
+            <select id="producto_compra" name="producto_compra">
+                <option disabled selected>-Elige un producto-</option>
+                    <option value="1" id="">Xiaomi Redmi Note 13</option>
+                    <option value="2">Xiaomi 14T</option>
+                    <option value="3">Xiaomi Redmi Note 12</option>
+                    <option value="4">Xiaomi Redmi Note 13 Pro</option>
+                    <hr>
+                    <option value="5">Samsung Galaxy 24</option>
+                    <option value="6">Samsung Galaxy 22</option>
+            </select>
+        </label>
+        <br><br>
+        <label id="color_producto">Escribe el color de la carcasa de regalo: 
+            <input type="text" list="items" name="color_producto">
+            <datalist id="items">
+                <option value="Rojo">color estandar</option>
+                <option value="Azul">color estandar</option>
+                <option value="verde">color premium</option>
+                <option value="Negro">color premium</option>
+            </datalist>
+        </label>
+        <br><br>
+        <label id="servicios">Selecciona servicios adicionales (puede seleccionar varios): 
+            <textarea list="items2" name="servicios">
+                <datalist id="items2">
+                    <option value="1">Opción 1</option>
+                    <option value="2">Opción 2</option>
+                </datalist>
+            </textarea>
+        </label>
+        <br><br>
+        <label id="metodo_pago">Metodos de pago:
+            <br>
+            <input type="radio"  name="metodo_pago">
+            Tarjeta de credito
+            <br>
+            <input type="radio"  name="metodo_pago">
+            PayPal
+            <br>
+            <input type="radio"  name="metodo_pago">
+            Transferencia bancaria
+        </label>
+        <br><br>
+        <label id="suscripcion">¿Quieres suscribirte a nuestro boletín de noticias?: 
+            <input type="checkbox" name="suscripcion" checked>
+        </label>
+        <br><br>
+        <input type="submit" value="Comprar">
+    </form>
+</body>
+</html>
