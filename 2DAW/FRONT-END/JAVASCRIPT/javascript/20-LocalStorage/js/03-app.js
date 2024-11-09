@@ -1,6 +1,6 @@
-// eliminar objetos del localStorage
-// remove Item, elimina una clave,valor
-// clear, limpia el local storage
+//eliminar elementos de localStorage
+//removeItem, elimina una clave,valor
+//clear, limpia el localStorage
 
 localStorage.removeItem('producto');
 

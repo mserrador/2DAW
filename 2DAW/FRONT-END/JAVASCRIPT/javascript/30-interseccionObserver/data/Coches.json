@@ -1,0 +1,45 @@
+[
+    {
+        "marca"     : "Renault",
+        "modelo"    : "megane",
+        "matricula" : "111RRR",
+        "color"     : "rojo",
+        "imagen"    : "img/megane.jpeg",
+        "npuertas"  :  3
+    },
+    {
+        "marca"     : "Audi",
+        "modelo"    : "q5",
+        "matricula" : "1111AAA",
+        "color"     : "negro",
+        "imagen"    : "img/q5.jpeg",
+        "npuertas"  :  5
+    },
+    {
+        "marca"     : "Ford",
+        "modelo"    : "focus",
+        "matricula" : "1111FFF",
+        "color"     : "blanco",
+        "imagen"    : "img/focus.jpeg",
+        "npuertas"  :  5
+    },  
+    {
+        "marca"     : "Ford",
+        "modelo"    : "kuga",
+        "matricula" : "2222FFF",
+        "color"     : "blanco",
+        "imagen"    : "img/kuga.jpeg",
+        "npuertas"  :  5
+    },  
+    {
+        
+        "marca"     : "Citroen",
+        "modelo"    : "c4",
+        "matricula" : "4444CCC",
+        "color"     : "blanco",
+        "imagen"    : "img/c4.jpeg",
+        "npuertas"  :  5
+    }  
+  
+   ]
+

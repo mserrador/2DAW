@@ -1,29 +1,32 @@
-// localStorage.setItem
-// setItem Agragar elementos (clave,valor)
-// el valor que almacena es de tipo String
-// No almacena ni objetos ni arrays etc
+//localStorage.setItem
+//setItem, agregar elementos (clave, valor)
+//el valor que almacena es de tipo string 
+//NO almacena ni objetos, ni arrays, etc....
 
+//localStorage pertenece a la ventana window
+//se puede llamar de dos formas
+//window.localstorage
+//localstorage
 
-// localStorage pertenece a la ventana window
-// se le puede invocar de dos formas
-// window.localStorage
-// localStorage
+//localStorage: mantiene la información aún cerrando el navegador
 
-// Mantiene la informacion aun cerrando el navegador
+//sesionStorage: los datos NO se mantienen después de cerrar el navegador
 
-// sesionStorage: los datos no se mantienen despues de cerrar el navegador
+localStorage.setItem('producto2','mesa');
 
-localStorage.setItem('producto','mesa');
 const producto={
     nombre:"raton",
     precio:50
 }
 
-// JSON.stringify convierte el objeto a String
-const resultado = JSON.stringify(producto);
-console.log(resultado);
+//JSON.stringify, convierte el objeto a string
+const resultado=JSON.stringify(producto);
+//console.log(resultado);
+//console.log(producto);
 
 localStorage.setItem('producto',resultado);
 
-const coches=["opel","volkswagen","mercedes"];
-localStorage.setItem('coches',coches);
+const coches=["opel","vw","mercedes"];
+localStorage.setItem('coches',JSON.stringify(coches));
+
+
