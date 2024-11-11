@@ -13,3 +13,6 @@ la info de ambos campos
 
 6 hace un fetch y mostrar datos con Coches.json que se encuentra en 30-intersectionObserver
 
+7 carrera de puntos en el canva carpeta 29
+
+
