@@ -5,3 +5,18 @@
 //    la mitad del mismo.
 //   c) Si el sueldo es mayor o igual a 900€, el sueldo se incrementa en 200€
 
+let sueldo = prompt(`Introduce tu sueldo:`);
+let anyos = prompt(`Introduce los anyos de antiguedad`);
+sueldo = Math.ceil(sueldo);
+
+if (sueldo <= 900 && anyos > 10) {
+    sueldo = sueldo*2;
+    console.log(`se duplica el sueldo: ${sueldo}`);
+} else if (sueldo <= 900 && anyos < 10){
+    let mitad = sueldo/2;
+    sueldo = sueldo + mitad;
+    console.log(`se suma la mitad del sueldo: ${sueldo}`);
+} else if (sueldo>= 900){
+    sueldo = sueldo + 200;
+    console.log(`se suma 200 al sueldo ${sueldo}`);
+}
