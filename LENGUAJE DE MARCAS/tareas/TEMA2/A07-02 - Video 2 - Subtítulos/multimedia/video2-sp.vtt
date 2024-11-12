@@ -1,0 +1,124 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.000
+En este vídeo vamos a ver cómo trabajar con la etiqueta vídeo y vais a ver que es muy similar a la etiqueta audio.
+
+00:00:10.000 --> 00:00:16.000
+Aquí ya me he bajado un vídeo sin copyright y aquí en el SRC vamos a poner la ruta.
+
+00:00:16.000 --> 00:00:22.000
+Va a ser contenido embebido, assets, vídeo, crotch de band.
+
+00:00:22.000 --> 00:00:29.000
+Guardamos y si miramos esto pues tenemos el mismo problema que teníamos al principio con el audio.
+
+00:00:29.000 --> 00:00:33.000
+Que no podemos ni reproducir ni cambiar el volumen ni nada de eso.
+
+00:00:33.000 --> 00:00:41.000
+Para ello necesitamos el atributo controls exactamente igual que con el audio.
+
+00:00:41.000 --> 00:00:48.000
+Y de esta forma pues ya veis que aparece un reproductor de vídeo más acostumbrado a lo que estamos.
+
+00:00:48.000 --> 00:00:56.000
+Voy a hacer una cosa aquí, que esto no es parte del curso pero es simplemente lo mismo que hacía con las imágenes
+
+00:00:56.000 --> 00:01:00.000
+para decirle que no se desborde.
+
+00:01:00.000 --> 00:01:08.000
+Entonces vamos a decir aquí más width 100% y así tenemos el vídeo sin que haya scroll.
+
+00:01:10.000 --> 00:01:13.000
+Voy a quitar esto también para tener un poco más de sitio.
+
+00:01:14.000 --> 00:01:20.000
+Y los controles que tenemos, o sea los controles, los atributos son prácticamente los mismos.
+
+00:01:20.000 --> 00:01:24.000
+Podemos poner autoplay y el vídeo empezaría así.
+
+00:01:24.000 --> 00:01:30.000
+También tenemos el atributo mutez, lo que pasa es que este vídeo en concreto no tiene audio.
+
+00:01:30.000 --> 00:01:37.000
+Pero podríamos ponérselo y el vídeo aparecería silenciado en el caso de que tuviera audio.
+
+00:01:37.000 --> 00:01:41.000
+Os lo voy a dejar por aquí para que sepáis que este atributo es posible.
+
+00:01:41.000 --> 00:01:49.000
+De hecho si veis aquí con ese atributo se tacha el símbolo del altavoz.
+
+00:01:49.000 --> 00:01:56.000
+También tenemos el atributo loop que no os lo había contado en audio pero también lo tenemos disponible en audio.
+
+00:01:56.000 --> 00:02:01.000
+Que sirve para que en el caso de que termine se vuelva a reproducir desde el principio.
+
+00:02:01.000 --> 00:02:08.000
+Esto es algo que también tiene puesto Instagram para que el vídeo una vez que termine vuelva a empezar desde el principio.
+
+00:02:10.000 --> 00:02:17.000
+Y por último un atributo que no tiene el audio por motivos que ahora veréis, voy a quitar el autoplay.
+
+00:02:17.000 --> 00:02:24.000
+Es el atributo poster. Esto sirve para decirle cuál va a ser nuestra imagen inicial.
+
+00:02:24.000 --> 00:02:27.000
+Lo que sería la miniatura si habláramos de YouTube.
+
+00:02:27.000 --> 00:02:35.000
+Aquí podemos poner contenido envivido, assets, image y vamos a poner por ejemplo portada JPG.
+
+00:02:35.000 --> 00:02:45.000
+Guardamos. Como veis aparece esto como poster y una vez que le damos al play empieza a reproducirse el vídeo ya desde el primer frame.
+
+00:02:45.000 --> 00:02:52.000
+Entonces con poster podéis controlar que se va a ver antes de que se reproduzca el vídeo.
+
+00:02:54.000 --> 00:03:00.000
+Si pusiéramos el autoplay, que por eso lo he quitado, no se llega a apreciar muy bien la imagen.
+
+00:03:00.000 --> 00:03:07.000
+Como veis aquí aparece eso durante medio segundo y empieza la reproducción del vídeo.
+
+00:03:08.000 --> 00:03:12.000
+Entonces esto es lo que os quería comentar sobre la etiqueta vídeo.
+
+00:03:12.000 --> 00:03:22.000
+Y en el siguiente vamos a hablar sobre los iframes o iframes que seguramente nunca tengáis que escribir uno vosotros,
+
+00:03:22.000 --> 00:03:29.000
+pero si os servirá para aprender a insertar contenido en vuestra web desde sitios externos.
+
+00:03:30.000 --> 00:03:39.000
+Ya sea YouTube, Instagram, Spotify o cientos de sitios que nos permiten coger un iframe y montarlo dentro de nuestra web.
+
+00:03:39.000 --> 00:03:42.000
+Pero eso ya os digo que os lo cuento en el siguiente vídeo.
+
+00:03:42.000 --> 00:03:50.000
+Espero que te esté gustando este nuevo curso de HTML5 y si tienes algún tipo de duda o consulta que quieras hacerme,
+
+00:03:50.000 --> 00:03:56.000
+te dejo un link en la descripción a la comunidad de Discord donde ya somos más de 600 personas
+
+00:03:56.000 --> 00:03:59.000
+y todos estamos dispuestos a echar un cable si hace falta.
+
+00:03:59.000 --> 00:04:05.000
+Además todos los viernes estoy en Twitch a las 10 de la noche hora de España
+
+00:04:05.000 --> 00:04:13.000
+y ahí también contesto dudas y hago prácticas que creo que pueden ayudar a la comunidad a dar sus primeros pasos en el desarrollo web.
+
+00:04:13.000 --> 00:04:21.000
+Así que si te gusta este contenido y quieres estar al día, te animo a que te suscribas al canal que es completamente gratuito
+
+00:04:21.000 --> 00:04:23.000
+y nos vemos en el siguiente.
+
+00:04:23.000 --> 00:04:25.000
+Un saludo y hasta luego.

@@ -1,0 +1,124 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.000
+In this video, we're going to see how to work with the video tag, and you'll see that it's very similar to the audio tag.
+
+00:00:10.000 --> 00:00:16.000
+Here I've already downloaded a copyright-free video, and here in SRC we'll put the path.
+
+00:00:16.000 --> 00:00:22.000
+It will be embedded content, assets, video, crotch de band.
+
+00:00:22.000 --> 00:00:29.000
+We save, and if we look at this, we have the same issue we had initially with audio.
+
+00:00:29.000 --> 00:00:33.000
+We can't play, change the volume, or anything like that.
+
+00:00:33.000 --> 00:00:41.000
+For this, we need the controls attribute, just like with audio.
+
+00:00:41.000 --> 00:00:48.000
+And this way, you see that a video player appears, more familiar to what we're used to.
+
+00:00:48.000 --> 00:00:56.000
+I'm going to do something here, which isn't part of the course, but it's just the same as with images
+
+00:00:56.000 --> 00:01:00.000
+to prevent it from overflowing.
+
+00:01:00.000 --> 00:01:08.000
+So we'll say max-width 100%, and this way we have the video without any scrolling.
+
+00:01:10.000 --> 00:01:13.000
+I'll also remove this to have a bit more space.
+
+00:01:14.000 --> 00:01:20.000
+And the controls we have, or rather the attributes, are practically the same.
+
+00:01:20.000 --> 00:01:24.000
+We can set autoplay, and the video would start like this.
+
+00:01:24.000 --> 00:01:30.000
+We also have the muted attribute, although this particular video has no audio.
+
+00:01:30.000 --> 00:01:37.000
+But we could add it, and the video would appear muted if it had audio.
+
+00:01:37.000 --> 00:01:41.000
+I'll leave it here so you know that this attribute is available.
+
+00:01:41.000 --> 00:01:49.000
+In fact, if you see here with that attribute, the speaker icon is crossed out.
+
+00:01:49.000 --> 00:01:56.000
+We also have the loop attribute, which I didn't mention with audio but is also available for audio.
+
+00:01:56.000 --> 00:02:01.000
+It allows the video to start over from the beginning once it finishes.
+
+00:02:01.000 --> 00:02:08.000
+This is also something that Instagram has so that the video, once it finishes, starts again from the beginning.
+
+00:02:10.000 --> 00:02:17.000
+And lastly, an attribute that audio doesn't have for reasons you'll see now—I'll remove autoplay.
+
+00:02:17.000 --> 00:02:24.000
+It's the poster attribute. This allows you to set what our initial image will be.
+
+00:02:24.000 --> 00:02:27.000
+It would be like the thumbnail if we were talking about YouTube.
+
+00:02:27.000 --> 00:02:35.000
+Here we can put embedded content, assets, image, and for example, cover.jpg.
+
+00:02:35.000 --> 00:02:45.000
+We save. As you see, this appears as the poster, and once we press play, the video starts from the first frame.
+
+00:02:45.000 --> 00:02:52.000
+So with poster, you can control what will be displayed before the video plays.
+
+00:02:54.000 --> 00:03:00.000
+If we set autoplay, which is why I removed it, you don't really get to see the image well.
+
+00:03:00.000 --> 00:03:07.000
+As you see here, it appears for half a second and then the video starts playing.
+
+00:03:08.000 --> 00:03:12.000
+So that's what I wanted to share with you about the video tag.
+
+00:03:12.000 --> 00:03:22.000
+And in the next one, we'll talk about iframes, which you may never need to write yourself,
+
+00:03:22.000 --> 00:03:29.000
+but it will be useful to learn how to insert content into your website from external sites.
+
+00:03:30.000 --> 00:03:39.000
+Be it YouTube, Instagram, Spotify, or hundreds of sites that allow us to take an iframe and embed it in our website.
+
+00:03:39.000 --> 00:03:42.000
+But I'll tell you more about that in the next video.
+
+00:03:42.000 --> 00:03:50.000
+I hope you're enjoying this new HTML5 course, and if you have any questions or queries,
+
+00:03:50.000 --> 00:03:56.000
+there’s a link in the description to the Discord community where there are over 600 people,
+
+00:03:56.000 --> 00:03:59.000
+and we're all willing to lend a hand if needed.
+
+00:03:59.000 --> 00:04:05.000
+Also, every Friday I'm on Twitch at 10 p.m. Spanish time,
+
+00:04:05.000 --> 00:04:13.000
+and I also answer questions and do practical exercises that I think can help the community take their first steps in web development.
+
+00:04:13.000 --> 00:04:21.000
+So if you like this content and want to stay up to date, I encourage you to subscribe to the channel, it's completely free.
+
+00:04:21.000 --> 00:04:23.000
+See you in the next one.
+
+00:04:23.000 --> 00:04:25.000
+Greetings and goodbye.

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos en HTML5 - Mario</title>
+</head>
+<body>
+    <h1>Vídeos en HTML 5</h1>
+    <h2>Vídeo 1</h2>
+    <video src="multimedia/video1.webm" width="320px" height="240px" autoplay loop muted></video>
+    <h2>Vídeo 2</h2>
+    <video src="multimedia/video1.webm" width="640px" height="480px" controls preload="metadata" poster="multimedia/thumbnail1.jpg"></video>
+    <h2>Vídeo 3</h2>
+    <video src="multimedia/video1.webm#t=10,30" width="320px" height="240px" playsinline controls ></video>
+    <h2>Vídeo 4</h2>
+    <video width="640px" height="480px" controls>
+        <source src="multimedia/video1.webm" type="video/mp4">
+        <source src="multimedia/video1.mp4" type="video/webm">
+        <img src="multimedia/thumbnail1.jpg" alt="video no soportado">
+        Su navegador no soporta contenido multimedia
+    </video> 
+    <h2>Vídeo 5</h2>
+    <video src="multimedia/video1.webm" width="320px" height="240px" loop controls muted auto></video>
+    
+    
+</body>
+</html>
