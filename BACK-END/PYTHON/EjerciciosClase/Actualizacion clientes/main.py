@@ -41,7 +41,7 @@ def opcion1():
 
 #----------------------------------------------------OPCION2------------------------------------------------------------------------------------------------
 
-# la funcion opcion 2 se encarga de dar de alta en el fichero binario
+# la funcion opcion 2 se encarga de dar de alta en el fichero texto
 def opcion2():
     with open("fite","a") as fite:
         # como estamos metiendo registros en un fichero texto, hay que hacer un formato para introducirle los datos
