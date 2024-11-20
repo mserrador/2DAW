@@ -1,0 +1,6 @@
+20/11/2024--------------------------------------------------------------------------------
+cuando pida algo solo quiere el src,
+
+que ha mandado?:hacer la nota que se encuentra en el movil(notes), de hacer unos apuntes de que necesitamos
+saber de js para usar react, lo va a poner para subirlo, como tarea | tenemos el componenete main, vamos a crear dos componentes mas, uno que se llame padre y otro que se llame hijo, quiere que haya comunicacion entre ellos,(se pasen una funcion)
+osea, el padre le pasa una funcion al hijo, y el hijo tiene un boton que cuando le das click muestra la funcion que le pasa el padre
