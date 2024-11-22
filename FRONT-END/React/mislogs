@@ -4,3 +4,10 @@ cuando pida algo solo quiere el src,
 que ha mandado?:hacer la nota que se encuentra en el movil(notes), de hacer unos apuntes de que necesitamos
 saber de js para usar react, lo va a poner para subirlo, como tarea | tenemos el componenete main, vamos a crear dos componentes mas, uno que se llame padre y otro que se llame hijo, quiere que haya comunicacion entre ellos,(se pasen una funcion)
 osea, el padre le pasa una funcion al hijo, y el hijo tiene un boton que cuando le das click muestra la funcion que le pasa el padre
+
+22/11/24----------------------------------------------------------------------------------
+Ha resuelto en clase el ejercicio del padre e hijo de la clase anterior,
+hemos isntalado los propTypes en la carptea 01-app.vite y con este comando
+yarn add prop-types
+$ ejercicio: hacer un contador que tenga un boton para incrementar, para decrementar y otro para resetear, a la app 5 crearle dos metodos mas, los que faltan
+: hacer un custom hook (hook personalizado) que devuelva la funcion de incrementar, la funcion  de decrementar y  la funcion resetear  nombre:"setContador"

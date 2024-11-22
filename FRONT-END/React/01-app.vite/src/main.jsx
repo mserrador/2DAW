@@ -11,13 +11,15 @@ import {App,App1} from './00-App.jsx'
 import { App2 } from './01-App.jsx';
 import './App.css'; // importar hojas de estilo
 import { App3 } from './03-App.jsx';
+import {Padre} from './Padre.jsx';
+import { App4 } from './04-App.jsx';
+import { App5 } from './05-App.jsx';
 
 // Renderiza el o los componentes
 ReactDOM.createRoot(document.getElementById('root')).render(
   // se aconseja trabajar en modo estricto, porque nos va a permitir detectar 
   // errores comunes en la etapa de desarrollo
   <React.StrictMode>
-    <App3 title={24} nombre={"Maximo Veridio"} />
-    
+    <App5 valor={3}/>
   </React.StrictMode>,
 )
