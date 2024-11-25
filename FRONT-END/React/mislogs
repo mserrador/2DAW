@@ -9,5 +9,12 @@ osea, el padre le pasa una funcion al hijo, y el hijo tiene un boton que cuando 
 Ha resuelto en clase el ejercicio del padre e hijo de la clase anterior,
 hemos isntalado los propTypes en la carptea 01-app.vite y con este comando
 yarn add prop-types
-$ ejercicio: hacer un contador que tenga un boton para incrementar, para decrementar y otro para resetear, a la app 5 crearle dos metodos mas, los que faltan
-: hacer un custom hook (hook personalizado) que devuelva la funcion de incrementar, la funcion  de decrementar y  la funcion resetear  nombre:"setContador"
+$ ejercicio: hacer un contador que tenga un boton para incrementar, para decrementar y otro para resetear, a la app 5 crearle dos metodos mas, los que faltan //acabo de hacerlo en clase
+: hacer un custom hook (hook personalizado) que devuelva la funcion de incrementar, la funcion  de decrementar y  la funcion resetear  nombre:"setContador"$
+
+
+25/11/24------------------------------------------------------------------------
+En el fichero 06-App.jsx ha resuelto el segundo ejercicio del dia anterior, ha hehco un custom hook
+
+$una caja de texto, conforme voy escribiendo valores y refresque la pagina, se mantenga la informacion$
+usanado el use state, crear un componente, 

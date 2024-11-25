@@ -14,24 +14,34 @@ import { useState } from "react";
 export const App5 = ({valor}) => {
     const [count, setCount] = useState(valor);
 
-    const mostrarEvento = () => {
+    const incrementar = () => {
         //ERROR count++;
         //ERROR count += 1;
 
         // setCount(count+1);
         // setCount(1000);
-        // setCount( (c) => c + 1);
+        setCount( (c) => c + 1);
 
-        setTimeout(()=>{
+        /* setTimeout(()=>{
             //setCount(count + 1)
             setCount((c) => c + 1);
-        },1000) //ERROR
+        },1000) */
 
+    }
+    const decrementar = () => {
+
+        setCount( (c) => c - 1);
+
+    }
+    const resetear = () => {
+        setCount(0);
     }
     return (
     <>
         <h1>{count}</h1>
-        <button onClick={mostrarEvento}></button>
+        <button onClick={incrementar}>Incrementar</button>
+        <button onClick={decrementar}>Decrementar</button>
+        <button onClick={resetear}>Resetear</button>
     </>
   )
 }

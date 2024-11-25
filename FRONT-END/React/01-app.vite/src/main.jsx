@@ -14,12 +14,14 @@ import { App3 } from './03-App.jsx';
 import {Padre} from './Padre.jsx';
 import { App4 } from './04-App.jsx';
 import { App5 } from './05-App.jsx';
+import { App6 } from './06-App.jsx';
+import { App7 } from './07-App.jsx';
 
 // Renderiza el o los componentes
 ReactDOM.createRoot(document.getElementById('root')).render(
   // se aconseja trabajar en modo estricto, porque nos va a permitir detectar 
   // errores comunes en la etapa de desarrollo
   <React.StrictMode>
-    <App5 valor={3}/>
+    <App7/>
   </React.StrictMode>,
 )
