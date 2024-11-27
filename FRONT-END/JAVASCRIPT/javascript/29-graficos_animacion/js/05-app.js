@@ -1,38 +1,21 @@
-/*
-fetch API
-    fetch(url,{
-        method: 'POST', 'GET', 'PUT', 'DELETE'
-        body: Datos que enviamos. Si es un objeto hay que convertilo JSON.stringify(dato)
-        headers:{
-            cabeceras de informacijón swobre lo que estamos enviando
-            No es lo mismo enviar una foto que enviar un formulario, etc...
-        }
-    })
+//curva bezier cuadrática
+//quadraticCurveTo(controlX,controlY,x,y)
 
-*/
+//Requiere dos puntos, el primero es un punto de control 
+//y el segundo es el punto final
 
-const cargarJsonBtn=document.querySelector('#cargarGET');
+window.onload=()=>{
+    let canvas=document.querySelector('#miCanvas');
+    let ctx=canvas.getContext('2d'); //trabajar en 2d
 
-cargarJsonBtn.addEventListener('click',obtenerDatos);
+    ctx.lineWidth=5;
+    ctx.strokeStyle="orange";
+    ctx.beginPath();
+    ctx.moveTo(20,20);
+    ctx.quadraticCurveTo(150,450,100,20);
 
-
-function obtenerDatos(){
-    const url="https://picsum.photos/list";
-
-    //fetch ya tiene el resolve y el reject implicito. No hay que difinir la promesa
-    //
-    fetch(url)
-        .then (respuesta=>{
-            console.log(respuesta);
-            console.log(respuesta.ok);
-            console.log(respuesta.status);
-            return respuesta.json();
-        })
-         .then (datos=>{
-            console.log(datos);
-            //mostrarDatos(datos);
-        })
-        .catch(error=>{
-            console.log(error);
-        })  
+    ctx.stroke();
 }
+
+
+

@@ -1,51 +1,16 @@
-//POST 
+//curva Bezier
+//bezierCurveTo(xControl,yControl,xControl2,yControl2,x,y)
 
-//Guía de como trabajar con diferentes peticiones
+window.onload=()=>{
+    let canvas=document.querySelector('#miCanvas');
+    let ctx=canvas.getContext('2d'); //trabajar en 2d
 
-//https://www.jsonplaceholder.org/
+    ctx.lineWidth=5;
+    ctx.strokeStyle="orange";
 
-//https://jsonplaceholder.typicode.com/posts
+    ctx.beginPath();
+    ctx.moveTo(20,20);
+    ctx.bezierCurveTo(150,450,20,200,300,20);
 
-//https://jsonplaceholder.typicode.com/guide/
-
-const enviarButonPost=document.querySelector('#cargarPOST');
-
-
-enviarButonPost.addEventListener('click',()=>{
-    const newPost={
-        title: 'foo',
-        body: 'bar',
-        userId: 1,  
-    }
-    console.log(newPost);
-    console.log(JSON.stringify(newPost));
-    fetch('https://jsonplaceholder.typicode.com/posts', {
-        method: 'POST',
-        body: JSON.stringify(newPost),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-          }    
-    })
-
-    .then(res=>{
-        return res.json();
-    })
-    .then(datos=>console.log(datos));
-})
-
-
-/* fetch('https://jsonplaceholder.typicode.com/posts', {
-    method: 'POST',
-    body: JSON.stringify({
-      title: 'foo',
-      body: 'bar',
-      userId: 1,
-    }),
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-  })
-    .then((response) => response.json())
-    .then((json) => console.log(json));
- */
-
+    ctx.stroke();
+}

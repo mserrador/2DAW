@@ -36,7 +36,7 @@ def opcion1():
         # con el seek posicionamos el puntero
         fibi.seek(bytes)
         # escribimos el registro empaquetado
-        fibi.write(regisp)
+         
 
 
 #----------------------------------------------------OPCION2------------------------------------------------------------------------------------------------
@@ -82,13 +82,13 @@ def opcion3():
         ficheroB = os.stat("fibi")
         bytesB = ficheroB.st_size
 
-        # comprobamos que los ficheros si tienen contenido sobre el que tranajar
+        # comprobamos que los ficheros si tienen contenido sobre el que trabajar
         if bytesT <= 0:
             print("El fichero tipo texto esta vacio, no se puede leer nada")
         elif bytesB <= 0:
             print("El fichero tipo texto esta vacio, no se puede leer nada")
         elif bytesT <= 0 and bytesB <= 0:
-            print("ambos ficheros estab vacios, no se puede leer nada")
+            print("ambos ficheros estan vacios, no se puede leer nada")
 
         # al ver que ninguno esta vacio, continuamos
         else:
