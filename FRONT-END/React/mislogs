@@ -18,3 +18,12 @@ En el fichero 06-App.jsx ha resuelto el segundo ejercicio del dia anterior, ha h
 
 $una caja de texto, conforme voy escribiendo valores y refresque la pagina, se mantenga la informacion$
 usanado el use state, crear un componente, 
+
+27/11/24--------------------------------------------------------------------------------------------
+hoy vamos a hacer el custoom hook que propuso ayer y va a proponer 2 ejercicios mas, hoy uno de formulario y otro el viernes cuando entremos para hacerlo en clase
+
+ha prpuesto que hagamos un pequeño formulario, que tiene dos campos de forma que 
+lo escribamos en una caja de texto automaticamente se escriba abajo, en ambas cajas, eso es el 
+priemr paso, y el segundo es que se quede de forma permanente
+
+he resuelto en clase el primer paso, queda hacer lo del localStorage

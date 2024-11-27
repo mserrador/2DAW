@@ -26,11 +26,11 @@ import { useState } from "react"
   )
 } */
 
-  export const GuardarEstado = () => {
+/*   export const GuardarEstado = () => {
     
-    const [texto,setTexto] = useState{
+    const [texto,setTexto] = useState(
         localStorage.getItem('text')
-    };
+    )
     const setLocalStorage=value=>{
         setTexto(value)
         localStorage.setItem("text",value)
@@ -48,12 +48,45 @@ import { useState } from "react"
     
     </>
   )
+} */
+
+
+// hacemos el custom hook que almacena en el local storage el valor introducido por el input
+
+export const useLocalStorage = (key,valorInicial) => {
+  const [estadoLocal, setEstadoLocal] = useState(()=>{
+    const item = localStorage.getItem(key);
+    return item ? JSON.parse(item) : valorInicial
+  });
+
+  const setValue=valor=>{
+    setEstadoLocal(valor);
+    localStorage.setItem(key,JSON.stringify(valor));
+  }
+
+  return [estadoLocal,setValue];
 }
 
 
 
-export const App7 = () => {
+export const GuardarEstado2 = () => {
+  const [text, setText] = useLocalStorage('text','');
+  const [times, setTimes] = useLocalStorage('time',0);
+
+
   return (
-    <div>07-App</div>
+    <>
+    
+    <input 
+        // onInput={(e) => setText(e.target.value)} 
+        onChange={(e) => setText(e.target.value)}
+        type="text" 
+        value={text}>
+    </input>   
+    <button onClick={()=>setTimes(times + 1)}>Clic</button>
+    <span>{times}</span>
+    
+    </>
   )
 }
+
