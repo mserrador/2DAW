@@ -17,6 +17,7 @@ import { App5 } from './05-App.jsx';
 import { App6 } from './06-App.jsx';
 import { GuardarEstado2 } from './07-App.jsx';
 import { Ej271124 } from './ej27-11-24.jsx';
+import { Ej291124 } from './ej29-11-24.jsx';
 
 
 // Renderiza el o los componentes
@@ -24,6 +25,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   // se aconseja trabajar en modo estricto, porque nos va a permitir detectar 
   // errores comunes en la etapa de desarrollo
   <React.StrictMode>
-    <Ej271124/>
+    <Ej291124/>
   </React.StrictMode>,
 )

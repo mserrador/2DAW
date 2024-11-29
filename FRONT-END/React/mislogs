@@ -27,3 +27,10 @@ lo escribamos en una caja de texto automaticamente se escriba abajo, en ambas ca
 priemr paso, y el segundo es que se quede de forma permanente
 
 he resuelto en clase el primer paso, queda hacer lo del localStorage
+
+
+29/11/24--------------------------------------------------------------------------------------------
+hacer una lista compra con un 1 input texto, 2btn añadir y quitar (se borra lo marcado en una checkbox). pan,
+añadimos checkbox con pan, abajo hay un contador de cosas no marcadas. (componentes: lista compra, item compra)
+
+el objetivo es que cada vez que escriba en el input, se genere una chekbox(lo agregue a la lista), y despues los que haya sleecionado, cuando le de al boton menos se quiten de la lista, y haya tmb un contador de los items que tengo en la lista
