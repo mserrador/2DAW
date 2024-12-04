@@ -1,28 +1,24 @@
-//FRAGMENT
+//texto
 
-//https://jsonplaceholder.typicode.com/users
+window.onload=()=>{
+    let canvas=document.querySelector('#miCanvas');
+    let ctx=canvas.getContext('2d'); //trabajar en 2d
 
-const cargarJsonBtn=document.querySelector('#cargarGET');
+    ctx.font="60px arial";
+    ctx.lineWidth=2.0;
+    ctx.fillStyle="blue";
+    ctx.strokeStyle="yellow";
 
-cargarJsonBtn.addEventListener('click',()=>{
+    //sombras
+    ctx.shadowColor="black";
+    ctx.shadowOffsetX=5;
+    ctx.shadowOffsetY=5;
+    ctx.shadowBlur=10;
 
-    fetch('https://jsonplaceholder.typicode.com/users',{
-        method: 'GET',
-    })
+    //dibuja el texto relleno
+    //fillText(texto,coordenada x, coordenada y, número pixel)
+    ctx.fillText("hola",100,80);
 
-
-    .then (res=>{
-        return res.json()
-    })
-    .then (datos=>{
-        const list=document.querySelector('#contenido')
-        const fragment=document.createDocumentFragment()
-        for (const listitem of datos){
-            const lista=document.createElement('li')
-            lista.textContent=`${listitem.name} -${listitem.username}`
-            fragment.appendChild(lista);
-        }
-        list.appendChild(fragment);
-
-    })
-})
+    //dibuja el texto sin rellenar
+    ctx.strokeText("hola",100,80);
+}

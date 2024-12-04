@@ -18,7 +18,7 @@ perro2=Perro("nomdos","razados",2)
 # hacemos un pickle
 # creamos un fichero binario que es con el que voy a usar pickle
 
-f=open("BACK-END/PYTHON/Apuntes/pickle/datos1","bw")
+f=open("datos1","bw")
 
 # metemos los datos con el metodod dump()
 # dump necesita que le pases primero el dato y luego el fichero
@@ -33,7 +33,7 @@ f.close()
 # por cada dump que haga tengo que ahcer un load
 
 # abrimos el fichero
-f=open("BACK-END/PYTHON/Apuntes/pickle/datos1","br+")
+f=open("datos1","br+")
 
 # ahora queremos leer cada dump que hicimos, usamos load
 # para leer el registro solo le pasamos el nombre del fichero

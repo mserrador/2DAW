@@ -99,9 +99,9 @@ def opcion3():
             for i in range(a):
                 registrot = fite.read(14)
                 # ahora que tenemos un registro del fite, leemos al completo el fibi en busca de coincidencias en el id para sustituir el nombre 
-                # guardamos el id en una variable, esta varibale la suaremos despues para encontrar el registro de fibi a modificar
+                # guardamos el id en una variable, esta varibale la usaremos despues para encontrar el registro de fibi a modificar
                 idT = registrot[0]+registrot[1]+registrot[2]
-                # aqui esta la variable que tiene guardada la id del registro que acabamos de ller de fite
+                # aqui esta la variable que tiene guardada la id del registro que acabamos de leer de fite
                 idT=idT.strip("0") 
                 idT = int(idT)
                 idB = 0

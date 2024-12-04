@@ -1,56 +1,32 @@
-//obtener informacion del empleados.json
+//LÍNEAS
 
-const cargarJsonBtn=document.querySelector('#cargarJSONArray');
+window.onload=()=>{
+    let canvas=document.querySelector('#miCanvas');
+    let ctx=canvas.getContext('2d'); //trabajar en 2d
 
-cargarJsonBtn.addEventListener('click',obtenerDatos);
+    ctx.lineWidth=6;
+    ctx.strokeStyle="black";
+    ctx.fillStyle="yellow";
+
+    ctx.beginPath();
+    ctx.lineJoin="round"; //bevel, miter    
+    ctx.moveTo(50,50);//posición en la que se empieza (x,y)
+    ctx.lineTo(120,120); //posición del siguiente punto(x,y)
+    ctx.lineTo(10,120); //posición del siguiente punto (x,y)
+    ctx.closePath(); //cerrar desde el punto inicial al último
+    
+
+    ctx.stroke(); //pinta las líneas
+    ctx.fill();//rellenar de color amarillo
+
+    ctx.beginPath();
+    ctx.lineCap="round"; //butt, square
+    ctx.lineJoin="round"; //bevel, miter
+    ctx.moveTo(200,200);
+    ctx.lineTo(200,400);
+    ctx.lineTo(400,400);
+    ctx.stroke(); //pinta las líneas
 
 
-function obtenerDatos(){
-    const url="data/empleados2.json";
-
-    //fetch ya tiene el resolve y el reject implicito. No hay que difinir la promesa
-    //
-    fetch(url)
-        .then (respuesta=>{
-            console.log(respuesta);
-            console.log(respuesta.ok);
-            console.log(respuesta.status);
-            return respuesta.json();
-        })
-         .then (datos=>{
-            console.log(datos);
-            mostrarDatos(datos);
-        })
-        .catch(error=>{
-            console.log(error);
-        })  
-}
-
-
-
-function mostrarDatos(empleados){
-    const contenido=document.querySelector('#contenido');
-
-    empleados.forEach(empleado => {
-        const {id,nombre,empresa,trabajo}=empleado;
-        
-        contenido.innerHTML +=`
-        <div id='${id}'>
-            <p> id: ${id}</p>
-            <p> nombre: ${nombre}</p>   
-            <p> empresa: ${empresa}</p>
-            <p> trabajo: ${trabajo}</p>
-            <button class="boton">Enviar</button>
-        </div>
-        `    
-    });
-    const botones=document.querySelectorAll('.boton');
-    botones.forEach((btn,indice)=>{
-        btn.addEventListener("click",()=>{
-            alert (`Has hecho clic en ${indice}`)
-        })
-    })
-    console.log(contenido);
 
 }
-
