@@ -1,0 +1,36 @@
+20/11/2024--------------------------------------------------------------------------------
+cuando pida algo solo quiere el src,
+
+que ha mandado?:hacer la nota que se encuentra en el movil(notes), de hacer unos apuntes de que necesitamos
+saber de js para usar react, lo va a poner para subirlo, como tarea | tenemos el componenete main, vamos a crear dos componentes mas, uno que se llame padre y otro que se llame hijo, quiere que haya comunicacion entre ellos,(se pasen una funcion)
+osea, el padre le pasa una funcion al hijo, y el hijo tiene un boton que cuando le das click muestra la funcion que le pasa el padre
+
+22/11/24----------------------------------------------------------------------------------
+Ha resuelto en clase el ejercicio del padre e hijo de la clase anterior,
+hemos isntalado los propTypes en la carptea 01-app.vite y con este comando
+yarn add prop-types
+$ ejercicio: hacer un contador que tenga un boton para incrementar, para decrementar y otro para resetear, a la app 5 crearle dos metodos mas, los que faltan //acabo de hacerlo en clase
+: hacer un custom hook (hook personalizado) que devuelva la funcion de incrementar, la funcion  de decrementar y  la funcion resetear  nombre:"setContador"$
+
+
+25/11/24------------------------------------------------------------------------
+En el fichero 06-App.jsx ha resuelto el segundo ejercicio del dia anterior, ha hehco un custom hook
+
+$una caja de texto, conforme voy escribiendo valores y refresque la pagina, se mantenga la informacion$
+usanado el use state, crear un componente, 
+
+27/11/24--------------------------------------------------------------------------------------------
+hoy vamos a hacer el custoom hook que propuso ayer y va a proponer 2 ejercicios mas, hoy uno de formulario y otro el viernes cuando entremos para hacerlo en clase
+
+ha prpuesto que hagamos un pequeño formulario, que tiene dos campos de forma que 
+lo escribamos en una caja de texto automaticamente se escriba abajo, en ambas cajas, eso es el 
+priemr paso, y el segundo es que se quede de forma permanente
+
+he resuelto en clase el primer paso, queda hacer lo del localStorage
+
+
+29/11/24--------------------------------------------------------------------------------------------
+hacer una lista compra con un 1 input texto, 2btn añadir y quitar (se borra lo marcado en una checkbox). pan,
+añadimos checkbox con pan, abajo hay un contador de cosas no marcadas. (componentes: lista compra, item compra)
+
+el objetivo es que cada vez que escriba en el input, se genere una chekbox(lo agregue a la lista), y despues los que haya sleecionado, cuando le de al boton menos se quiten de la lista, y haya tmb un contador de los items que tengo en la lista

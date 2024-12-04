@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #contenido p {
     margin-bottom: 20px;
     margin-left: 30px;
@@ -15,3 +16,22 @@ img{
     opacity: 1;  /*Se muestra la imagen*/
    
 }
+=======
+#contenido p {
+    margin-bottom: 20px;
+    margin-left: 30px;
+    
+}
+
+img{
+    
+    overflow: hidden;
+    opacity: 0;  /*Se oculta la imagen*/
+    transition: .9s ease-in-out;
+}
+
+.visible {
+    opacity: 1;  /*Se muestra la imagen*/
+   
+}
+>>>>>>> 4a0aee7c5f8e1e9284e2f3877673d2df43adf297
